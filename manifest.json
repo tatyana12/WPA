@@ -3,12 +3,23 @@
   "name": "Tabbs Web App",
   "description": "Tabbs is an digital booking service for the night life scenery",
   "icons": [
-    {
-      "src": "favicon.png",
-      "sizes": "1024x1024",
-      "type": "image/png"
-    }
-  ],
+{
+"src":
+"icons-192.png",
+"type":
+"image/png",
+"sizes":
+"192x192"
+},
+{
+"src":
+"icons-512.png",
+"type":
+"image/png",
+"sizes":
+"512x512"
+}
+],
   "start_url": "ttps://tatyana12.github.io/mobile/index.html",
   "display": "fullscreen",
   "theme_color": "#F5C33E",
