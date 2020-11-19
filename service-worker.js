@@ -9,8 +9,8 @@ const PRECACHE_URLS = [
   'index.html',
   './',       // Alias for index.html
   'styles.css',
-  'images/lightgold.jpg',
-  'images/lightblue.jpg',
+  'lightgold.jpg',
+  'lightblue.jpg',
    'launcher-icon-1x.png',
     'launcher-icon-2x.png'
   
