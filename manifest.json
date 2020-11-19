@@ -1,7 +1,7 @@
 
-  "short_name": "Tabbs Web App",
-  "name": "Tabbs Web App",
-  "description": "Tabbs is an digital booking service for the night life scenery",
+  "short_name": "My App",
+  "name": "My great App",
+  "description": "This app show how swrvice worker and manifest file used",
   "icons": [
 {
 "src":
@@ -20,7 +20,7 @@
 "512x512"
 }
 ],
-  "start_url": "ttps://tatyana12.github.io/mobile/index.html",
+  "start_url": "https://tatyana12.github.io/mobile/index.html",
   "display": "fullscreen",
   "theme_color": "#F5C33E",
   "background_color": "#ffffff"
