@@ -5,7 +5,7 @@
   "icons": [
 {
 "src":
-"icons-192.png",
+"/images/icons-192.png",
 "type":
 "image/png",
 "sizes":
@@ -13,7 +13,7 @@
 },
 {
 "src":
-"icons-512.png",
+"/images/icons-512.png",
 "type":
 "image/png",
 "sizes":
