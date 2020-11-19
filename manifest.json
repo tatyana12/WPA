@@ -10,7 +10,7 @@
       "type": "image/png"
     },
     {
-      "src": "/images/icon512.png",
+      "src": "https://github.com/tatyana12/mobile/blob/main/images/icons-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
