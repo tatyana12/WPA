@@ -1,7 +1,8 @@
 {
   "name": "My Progressive Web Application",
   "short_name": "Progressive",
-  "start_url": "/?home=true",
+  "start_url":
+"index.html?launcher=true",
   "icons": [
     
     {
