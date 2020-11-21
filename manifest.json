@@ -2,15 +2,15 @@
 "short_name": "A progressive web app",
   "name": "A progressive web app:service workers and manifest file",
   "description": "A progressive web app:service workers and manifest file",
-   "start_url": "index.html?launcher=true"
+   "start_url": "/index.html?launcher=true"
   "icons": [
     {
-      "src": "launcher-icon-1x.png",
+      "src": "/images/launcher-icon-1x.png",
       "type": "image/png",
       "sizes": "48x48"
     },
     {
-      "src": "launcher-icon-2x.png",
+      "src": "/images/launcher-icon-2x.png",
       "type": "image/png",
       "sizes": "96x96"
     }
