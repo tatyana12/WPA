@@ -1,9 +1,19 @@
-display: "standalone"
-icons: [{src: ""src": "/images/launcher-icon-1x.png", "type": "image/png", "sizes": "48x48", purpose: "any maskable"},…]
-name: "Food Ninja"
-orientation: "portrait-primary"
-short_name: "FoodNinja"
-start_url: "/index.html"
-theme_color: "#FFE1C4"
-
+{
+  "short_name": "A progressive web app",
+  "name": "A progressive web app:service workers and manifest file?",
+  "description": "Weather forecast information",
+  "start_url": "/index.html",
+  "icons": [
+    {
+      "src": "/images/launcher-icon-1x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/images/launcher-icon-2x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    }
+    ]
+    }
  
