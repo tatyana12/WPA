@@ -1,19 +1,23 @@
 {
-  "short_name": "A progressive web app",
-  "name": "A progressive web app:service workers and manifest file?",
-  "description": "Weather forecast information",
-  "start_url": "./", 
+"name": "js13kGames Progressive Web App",
+  "short_name": "js13kPWA",
+  "description": "Progressive Web App that lists games submitted to the A-Frame category in the js13kGames 2017 competition.",
   "icons": [
     {
-      "src": "/images/launcher-icon-1x.png",
-      "type": "image/png",
-      "sizes": "48x48"
+      "src": "launcher-icon-1x.png",
+      "sizes": "48x48",
+      "type": "image/png"
     },
+    
     {
-      "src": "/images/launcher-icon-2x.png",
-      "type": "image/png",
-      "sizes": "96x96"
+       "src": "launcher-icon-2x.png",
+      "sizes": "96x96",
+      "type": "image/png"
     }
-    ]
-    }
+  ],
+  "start_url": "index.html?launcher=true"
+  "display": "fullscreen",
+  "theme_color": "#B12A34",
+  "background_color": "#B12A34"
+}
  
