@@ -2,7 +2,7 @@
   "short_name": "A progressive web app",
   "name": "A progressive web app:service workers and manifest file?",
   "description": "Weather forecast information",
-  "start_url": "index.html?launcher=true",
+  "start_url": "./",
   "icons": [
     {
       "src": "/images/launcher-icon-1x.png",
