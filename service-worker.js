@@ -12,6 +12,8 @@ const PRECACHE_URLS = [
   'images/lightgold.jpg',
   'images/lightblue.jpg',
    'images/launcher-icon-1x.png',
+  app.js,
+  service-worker.js,
     'images/launcher-icon-2x.png'
   
 ];
