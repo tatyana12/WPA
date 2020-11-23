@@ -2,7 +2,7 @@
   "short_name": "A progressive web app",
   "name": "A progressive web app:service workers and manifest file",
   "description": "A progressive web app:service workers and manifest file",
-  "start_url": "/index.html",
+  "start_url": "/mobile/index.html",
   "background_color": "#3367D6",
   "display": "standalone",
   "scope": "/",
