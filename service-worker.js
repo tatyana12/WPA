@@ -6,8 +6,9 @@ const RUNTIME = 'runtime';
 
 // A list of local resources to be cached.
 const PRECACHE_URLS = [
-  'mobile/index.html',
+  'index.html',
   './',       // Alias for index.html
+   '/app.js'
   'mobile/styles.css',
   'images/lightgold.jpg',
   'images/lightblue.jpg',
@@ -16,8 +17,8 @@ const PRECACHE_URLS = [
     'images/launcher-icon-5x.png',
      'images/icon-144x144.png',
      'images/icon-152x152.png',
-       'images/maskable_icon-178x178.png',
-      "mobile/app.js" 
+       'images/maskable_icon-178x178.png'
+     
 
 ];
 
