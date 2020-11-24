@@ -16,7 +16,12 @@ const PRECACHE_URLS = [
     'images/launcher-icon-5x.png',
      'images/icon-144x144.png',
      'images/icon-152x152.png',
-       'images/maskable_icon-178x178.png'
+       'images/maskable_icon-178x178.png',
+      "mobile/app.js" , 
+
+"mobile/index.html",
+
+"mobile/styles.css"
       
   
 ];
