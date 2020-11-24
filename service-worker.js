@@ -8,8 +8,7 @@ const RUNTIME = 'runtime';
 const PRECACHE_URLS = [
   'index.html',
   './',       // Alias for index.html
-   '/app.js'
-  'mobile/styles.css',
+  'styles.css',
   'images/lightgold.jpg',
   'images/lightblue.jpg',
    'images/launcher-icon-1x.png',
@@ -18,8 +17,8 @@ const PRECACHE_URLS = [
      'images/icon-144x144.png',
      'images/icon-152x152.png',
        'images/maskable_icon-178x178.png'
-     
-
+      
+  
 ];
 
 // The install handler takes care of precaching the resources we always need.
@@ -69,3 +68,4 @@ self.addEventListener('fetch', event => {
     );
   }
 });
+ 
