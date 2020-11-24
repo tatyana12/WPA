@@ -6,9 +6,9 @@ const RUNTIME = 'runtime';
 
 // A list of local resources to be cached.
 const PRECACHE_URLS = [
-  'index.html',
+  'mobile/index.html',
   './',       // Alias for index.html
-  'styles.css',
+  'mobile/styles.css',
   'images/lightgold.jpg',
   'images/lightblue.jpg',
    'images/launcher-icon-1x.png',
@@ -17,13 +17,8 @@ const PRECACHE_URLS = [
      'images/icon-144x144.png',
      'images/icon-152x152.png',
        'images/maskable_icon-178x178.png',
-      "mobile/app.js" , 
+      "mobile/app.js" 
 
-"mobile/index.html",
-
-"mobile/styles.css"
-      
-  
 ];
 
 // The install handler takes care of precaching the resources we always need.
