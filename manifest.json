@@ -10,7 +10,7 @@
         { "src": "images/icon-192.png", "type": "image/png", "sizes": "192x192", "purpose": "any maskable" },
         { "src": "images/icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "any maskable" } 
         ], 
-    "start_url": "https://github.com/tatyana12/WPA/blob/main/index.html",
+    "start_url": "https://tatyana12.github.io/WPA/",
     "short_name": "Homework4PWA", 
     "name": "Progressive Web App for CNIT133m Homework 4"
 }
