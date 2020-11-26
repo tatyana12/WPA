@@ -1,65 +1,85 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Simple use of Service Worker">
+    <meta name="description" content="Example of simple PWA for CNIT133m">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <meta name="theme-color" content="#FFB266"/>
-    <link rel="apple-touch-icon" href="images/icon-192.png">
-  
-    
-    <title>A progressive web app (PWA)</title>
+    <meta name="theme-color" content="#FFB266"/>
+    <title>Simple PWA</title>
     <script>
-      // Add a global error event listener early on in the page load, to help ensure that browsers
-      // which don't support specific functionality still end up displaying a meaningful message.
-      window.addEventListener('error', function(error) {
+    window.addEventListener('error', function(error) {
         if (ChromeSamples && ChromeSamples.setStatus) {
-          console.error(error);
-          ChromeSamples.setStatus(error.message + ' (Your browser may not support this feature.)');
-          error.preventDefault();
+            console.error(error);
+            ChromeSamples.setStatus(error.message + ' (Sorry, your browser may not support this feature.)');
+            error.preventDefault();
         }
-      });
+    });
     </script>
     <link rel="apple-touch-icon" href="images/icon-192.png">
-     <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="styles.css">
-    
-  </head>
-
-  <body>
-<h1>A progressive web app (PWA)</h1>
-<p>This page will demonstrate a basic service worker and the option to install the application</p>
-<h3>Demo with images</h3>
-<p>A progressive web app (PWA) is the set of mobile web application development techniques that entails building apps that feel and look like native ones. Using a web stack (JS, HTML, and CSS), progressive web apps combine a rich functionality and smooth user experience associated with native apps. Simply put, PWA is the web app with the native-app flavor: After the installation, a user clicks on its icon on a device home screen and gets straight to the website.</p>
-<p>Main characteristics of a PWA (Progressive Web Application) as following:
-Full responsiveness and browser compatibility(PWAs work with all browsers and are compatible with any device, regardless of screen size and other specifications).
-Connectivity independence. Progressive web applications can work both offline and on low-quality networks.
-App-like interface. These apps mimic navigation and interactions of native apps.
- Push notifications. If used as a part of a good messaging strategy, push notifications can keep customers interested, motivating them to open and use an app more. 
-Self-updates. Able to update themselves automatically, apps stay fresh.
-Safety. These apps are served through HTTPS, so unauthorized users can’t access their content.
-Discoverability and easy installation. While search engines classify PWAs as applications, they are not distributed via app stores. These apps can be shared through a URL instead so they’re easily found. The installation is simple and entails visiting a site and adding it to a device home screen.
-</p>
-<label for="background-page">Choose a background page: </label>
-    <select name="background-page" id="background-page">
-        <option value="">Default/white</option>
-        <option value="lightblue.jpg">Light blue</option>
-        <option value="lightgold.jpg">Light gold</option>
-    </select>
-
-    <script> 
-      if ('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('service-worker.js');
-      }   
-
-      var myselect = document.querySelector('#background-page');
-      myselect.addEventListener('change', function() {
-        colBg = this.value;
-        document.body.style.background=  'url( '+ colBg +' )';
-        document.body.style.backgroundSize=  'cover';
-        document.body.style.backgroundRepeat=  'no-repeat';  
-      });
+</head>
+<body id="background-body">
+    <div id="main">
+        <h1>Progressive Web Applications (PWAs)</h1>
+        <p>A PWA (progressive web application) is a type of app that’s delivered on the user’s web browser. It employs a combination of common technologies, like HTML, CSS, JSON and JavaScript, to create a fast, feature-rich user experience that rivals that of a native app. PWAs work particularly well on the most modern browsers. According to Google, an application must use four things in order to be a PWA: a web app manifest, service workers, HTTPS and an icon (for the user's browser homepage).</p>
+        <p>PWAs employ a relatively new methodology to offer useful features and benefits due to being:</p>
+        <ul>
+            <li>
+                <strong>Responsive -</strong>
+                 They work on any device with a browser, whether mobile, desktop or emerging. Design for mobile first.
+            </li>
+            <li>
+                <strong>Sticky -</strong>
+                 Foster attraction and retention of user attention, using notifications and user experience on par with native apps.
+            </li>
+            <li>
+                <strong>Viral Ready -</strong>
+                 Easy to share via URL, and users don’t have to hassle with app stores or complex installation.
+            </li>
+            <li>
+                <strong>Easy to Access -</strong>
+                 User can opt to launch a PWA from a clickable icon on their browser home screen.
+            </li>
+            <li>
+                <strong>Fast and Reliable -</strong>
+                 Once a PWA has been loaded, caching allows high performance speed even when it’s offline or on a slow connection.
+            </li>
+            <li>
+                <strong>Secure and Up to Date -</strong>
+                 PWAs only work using HTTPS. Service workers handle updates, so the user doesn’t have to worry about it.
+            </li>
+        </ul>
+        <p>
+            <label for="back">Now see this PWA in action, by choosing a background image:</label>
+        </p>
+        <p>
+            <select id="back" onchange="changeBack();">
+                <option id="backwhite" value="default">-- Choose --</option>
+                <option id="bluetwinkles" value="twinkleblue">Twinkly Blue</option>
+                <option id="goldsparkles" value="sparklegold">Gold Sparkles</option>
+            </select>
+        </p>
+    </div>
+    <script>
+    if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("service-worker.js");
+    }
+    var selection = document.getElementById("back");
+    function changeBack() {
+        var choice = selection.options[selection.selectedIndex];
+        if (choice.value == "default") {
+            document.body.style.backgroundImage = "none";
+        }
+        if (choice.value == "twinkleblue") {
+            document.body.style.backgroundImage = "url('images/lightblue.jpg')";
+        }
+        if (choice.value == "sparklegold") {
+            document.body.style.backgroundImage = "url('images/lightgold.jpg')";
+        }
+    }
+    ;
     </script>
-    </body>
+</body>
 </html>
