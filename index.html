@@ -58,5 +58,27 @@ Discoverability and easy installation. While search engines classify PWAs as app
         });
       
 // ]]></script>
+    
+    <label for="background-page">Choose a background page: </label>
+    <select name="background-page" id="background-page">
+        <option value="">Default/white</option>
+        <option value="lightblue.jpg">Light blue</option>
+        <option value="lightgold.jpg">Light gold</option>
+    </select>
+
+    <script> 
+      if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('service-worker.js');
+      }   
+
+      var myselect = document.querySelector('#background-page');
+      myselect.addEventListener('change', function() {
+        colBg = this.value;
+        document.body.style.background=  'url( '+ colBg +' )';
+        document.body.style.backgroundSize=  'cover';
+        document.body.style.backgroundRepeat=  'no-repeat';  
+      });
+    </script>
+    
 </body>
 </html>
