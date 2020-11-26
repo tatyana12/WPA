@@ -1,45 +1,37 @@
+body { 
+    font-size: 1.2rem; 
+    font-family: Arial, Verdana, serif; 
+    background-color: #fff;
+}
 
-html {
-   box-sizing: border-box;
-   overflow-x: hidden;
+h1 { 
+    text-align: center; 
+    font-weight: 900; 
 }
-*, *:before, *:after {
-box-sizing: inherit;
+
+body#background-body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
-body {
-   margin: 0;
-   padding: 0;
-   font-family: 'Raleway', sans-serif;
-   overflow-x: hidden;
-   min-height: 100vh;  
+
+#main {
+    margin-left: 8%;
+    margin-right: 8%;
 }
-#wrapper {
-   margin: 0 auto;
-   max-width: 1000px;
-   display: flex;
-   flex-direction: column;
-   padding: 0 1rem 2rem 1rem ;
-}
-h1 {
-   text-align: center;
-   font-size: 2.2rem;
-   padding-bottom: .5rem;
-   font-family: 'Oswald', sans-serif;
-}
-p {
-   text-align: justify;
-   font-size: 1rem;
-}
-#background-page {
-   margin-top: .5rem;
-   padding: .4rem .8rem;
-   font-size: 1rem;
-   border: solid 2px rgb(114, 112, 112);
-   border-radius: 8px;
-   background-color: rgba(255, 255, 255, 0); 
-}
-@media screen and (min-width: 601px){
-   #background-page {
-      width: 30%;
-   }
-}
+
+@media (max-width: 480px) {
+    body#background-body {
+        background-attachment: scroll;
+    }
+    /* prevent phone select from zooming! */
+    body {
+        font-size: 1em;
+    }
+    input, select {
+        font-size: 100%;
+    }
+
+  }
+  
+  
