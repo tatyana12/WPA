@@ -1,37 +1,18 @@
-
 {
-  "short_name": "A progressive web app",
-  "name": "A progressive web app:service workers and manifest file",
-  "description": "A progressive web app:service workers and manifest file",
-  "start_url": "index.html",
-  "background_color": "#3367D6",
-  "display": "browser",
-  "scope": "/",
-  "theme_color": "#3367D6",
-  "icons": [
-    {
-      "src": "launcher-icon-1x.png",
-      "type": "image/png",
-      "sizes": "48x48",
-       "purpose": "any maskable"
-    },
-    {
-      "src": "launcher-icon-2x.png",
-      "type": "image/png",
-      "sizes": "96x96",
-       "purpose": "any maskable"
-    },
-    {
-      "src": "icon-144x144.png",
-      "type": "image/png",
-      "sizes": "144x144",
-       "purpose": "any maskable"
-    },
-    {
-      "src": "icon-152x152.png",
-      "type": "image/png",
-      "sizes": "152x152",
-       "purpose": "any maskable"
-    }
-    ]
-    }
+background_color": "#fff",
+    "theme_color": "#FFB266",
+    "description": "Provides simple example of a progressive web app (PWA) for homework 4, CNIT 133m.",
+    "display": "minimal-ui",
+    "orientation": "any",
+    "icons": [ 
+        { "src": "images/icon-48.png", "type": "image/png", "sizes": "48x48", "purpose": "any maskable" }, 
+        { "src": "images/icon-96.png", "type": "image/png", "sizes": "96x96", "purpose": "any maskable" }, 
+        { "src": "images/icon-192.png", "type": "image/png", "sizes": "192x192", "purpose": "any maskable" },
+        { "src": "images/icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "any maskable" } 
+        ], 
+    "start_url": "https://hills.ccsf.edu/~hcraig/cnit133m/hw4/index.html",
+    "short_name": "Homework4PWA", 
+    "name": "Progressive Web App for CNIT133m Homework 4"
+}
+
+ 
