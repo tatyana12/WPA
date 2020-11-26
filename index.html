@@ -45,19 +45,7 @@ Discoverability and easy installation. While search engines classify PWAs as app
 </select>
 <p><button id="show">Show Icon Selected</button></p>
 <div id="container">&nbsp;</div>
-<script>// <![CDATA[
-        if ('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('service-worker.js');
-        }
 
-        document.querySelector('#show').addEventListener('click', () => {
-          const iconUrl = document.querySelector('select').selectedOptions[0].value;
-          let imgElement = document.createElement('img');
-          imgElement.src = iconUrl;
-          document.querySelector('#container').appendChild(imgElement);
-        });
-      
-// ]]></script>
     
     <label for="background-page">Choose a background page: </label>
     <select name="background-page" id="background-page">
