@@ -1,8 +1,4 @@
-{ 
-   "short_name": "Homework4PWA", 
-    "name": "Progressive Web App for CNIT133m Homework 4"
-    
-    "background_color": "#fff",
+"background_color": "#fff",
     "theme_color": "#FFB266",
     "description": "Provides simple example of a progressive web app (PWA) for homework 4, CNIT 133m.",
     "display": "minimal-ui",
@@ -13,6 +9,7 @@
         { "src": "images/icon-192.png", "type": "image/png", "sizes": "192x192", "purpose": "any maskable" },
         { "src": "images/icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "any maskable" } 
         ], 
-     "start_url": "https://tatyana12.github.io/mobile/index.html"
-   
+    "start_url": "https://hills.ccsf.edu/~hcraig/cnit133m/hw4/index.html",
+    "short_name": "Homework4PWA", 
+    "name": "Progressive Web App for CNIT133m Homework 4"
 }
