@@ -11,8 +11,7 @@ const PRECACHE_URLS = [
   'styles.css',
   'images/lightgold.jpg',
   'images/lightblue.jpg',
-  
-       'images/maskable_icon-178x178.png'
+   'images/maskable_icon-178x178.png'
       
   
 ];
