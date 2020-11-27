@@ -1,4 +1,4 @@
- "background_color": "#fff",
+"background_color": "#fff",
     "theme_color": "#FFB266",
     "description": "Provides simple example of a progressive web app (PWA) for homework 4, CNIT 133m.",
     "display": "minimal-ui",
@@ -13,3 +13,9 @@
     "short_name": "Homework4PWA", 
     "name": "Progressive Web App for CNIT133m Homework 4"
 }
+
+
+
+
+
+
